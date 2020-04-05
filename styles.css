@@ -1,5 +1,22 @@
-a:hover {
+a, a:hover {
+    color: #08c;
     text-decoration: none;
+}
+.btn-primary {
+    background-color: #579bcf;
+    border: 0;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #5490c1;
+    background:#5490c1;
+}
+.btn-primary.focus, .btn-primary:focus {
+    background-color: #5490c1;
+    border: 0;
+    box-shadow: 0 0 0 0.1rem rgba(38,143,255,.5);
+}
+.btn-primary:hover {
+    background-color: #5490c1;
 }
 .content-wrapper {
     position: relative;
@@ -8,14 +25,15 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
-.comments-wrapper {
-
-}
 .btn-flat {
     border-radius: 0;
 }
 .comments-count {
     font-weight: 500;
+}
+.thread-action {
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 .comment {
     position: relative;
@@ -57,6 +75,6 @@ a:hover {
 .comment--reply .thread_creator {
     display: flex;
     flex-direction: column;
-    border-left: 2px solid #007bff;
+    border-left: 2px solid #579bcf;
     padding-left: 8px;
 }
