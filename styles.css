@@ -18,6 +18,10 @@ a, a:hover {
 .btn-primary:hover {
     background-color: #5490c1;
 }
+.material-icons {
+    font-size: inherit;
+    vertical-align: middle;
+}
 .content-wrapper {
     position: relative;
 }
