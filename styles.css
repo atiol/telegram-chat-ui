@@ -115,8 +115,10 @@ a, a:hover {
     margin-top: 20px;
 }
 .comment--create .comment-info {
-    border-left: 2px solid #179cde;
+    border-left: 3px solid #179cde;
     width: 100%;
+    background-color: #f8f9fa;
+    padding: 0.5rem 0.4rem 0.5rem 0;
 }
 .dot {
     font-size: 18px;
