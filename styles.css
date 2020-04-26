@@ -97,6 +97,17 @@ a, a:hover {
     flex-direction: column;
     padding-left: 8px;
 }
+.thread_creator__name {
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+}
+.right {
+    margin-left: auto;
+}
+.left {
+    align-self: flex-start;
+}
 .comment--reply .thread_creator {
     border-left: 2px solid #179cde;
 }
@@ -105,6 +116,7 @@ a, a:hover {
 }
 .comment--create .comment-info {
     border-left: 2px solid #179cde;
+    width: 100%;
 }
 .dot {
     font-size: 18px;
