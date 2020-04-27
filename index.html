@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,94 +9,142 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
+    <!-- Roboto fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin,cyrillic,cyrillic-ext"
+        rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin,cyrillic,cyrillic-ext"
+        rel="stylesheet" type="text/css">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Telegram Bot - Comments Page</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="text-center">Comments Bot</h3>
-                    <div class="thread-action">
-                        <span class="text-muted">March 27, 2020</span>
-                        <a href="#" class="text-muted">Unsubscribe</a>
-                    </div>
-                    <button class="btn btn-primary btn-block btn-flat mb-1">Show all comments</button>
-                        <span class="comments-count">16 comments</span>
                     <div class="comments-wrapper">
+                        <div class="topic">Topic</div>
+                        <div class="thread-action">
+                            <span class="text-muted">March 27, 2020</span>
+                            <a href="#" class="text-muted">Unsubscribe</a>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-flat mb-1">Show all comments</button>
+                        <span class="comments-count">16 comments</span>
                         <div class="comment">
-                            <div class="comment-img">
-                                <img src="https://placedog.net/200/200" alt="profile picture" width="40" height="40" class="rounded-circle"/>
+                            <div class="comment-img img-wrapper">
+                                <img src="https://placedog.net/200/200" alt="profile picture"
+                                    class="profile-img rounded-circle" />
                             </div>
                             <div class="comment-info">
                                 <div class="comment-info__group">
-                                    <span class="comment-info__group--name">约翰</span>
-                                    <span class="comment-info__group--date text-muted">Mar 27, edited</span>
+                                    <span class="comment-info__group--username">约翰</span>
+                                    <span class="comment-info__group--date">Mar 27, edited</span>
                                 </div>
                                 <div class="comment-text">Test re-edit - (add something after posted)</div>
                                 <div class="comment-actions">
-                                    <a href="#" class="comment-actions--like"><i class="material-icons-round">thumb_up</i> <span class="likes-count">5</span></a><span class="dot text-muted">.</span>
-                                    <a href="#" class="comment-actions--reply text-muted">Reply</a><span class="dot text-muted">.</span>
+                                    <a href="#" class="comment-actions--like active"><i
+                                            class="material-icons-round">thumb_up</i> <span
+                                            class="likes-count">5</span></a>
+                                    <a href="#" class="comment-actions--reply text-muted">Reply</a>
                                     <a href="#" class="comment-actions--delete text-muted">Delete</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="comment comment--reply">
-                            <div class="comment-img">
-                                <svg height="40" width="40">
+                            <div class="comment-img img-wrapper">
+                                <!-- <svg height="40" width="40">
                                     <circle cx="18" cy="20" r="18" fill="#369ace"></circle>
-                                    <text id="initials" x="45%" y="50%" font-size="1.1rem" dy=".38rem" text-anchor="middle" fill="#fff">A</text>
-                                </svg>
+                                    <text id="initials" x="45%" y="50%" font-size="1.1rem" dy=".38rem"
+                                        text-anchor="middle" fill="#fff">A</text>
+                                </svg> -->
+                                <span class="no-img bg0" data-content="W"></span>
                             </div>
                             <div class="comment-info">
                                 <div class="comment-info__group">
-                                    <span class="comment-info__group--name">Joseph Gitonga Wagura</span>
-                                    <span class="comment-info__group--date text-muted">Mar 27, edited</span>
+                                    <span class="comment-info__group--username" style="color: #7bc862;">Joseph Gitonga Wagura</span>
+                                    <span class="comment-info__group--date">Mar 27, edited</span>
                                 </div>
-                                <div class="thread_creator">
-                                    <span>约翰</span>
-                                    <span>Test reply</span>
+                                <div class="comment-reply">
+                                    <span class="comment-reply--username">Atiol R Beato</span>
+                                    <span class="comment-reply--text">
+                                        fgggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                        ggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                        gggggggggggggggggafsddddddddddddddddddddddddddddddddd
+                                        ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                        dddddddddddddddddddddddddddfasddddddddddddddddddddddd
+                                        ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                        dddddddddddddddddddddddddddddddddddddddddd
+                                    </span>
                                 </div>
-                                <div class="comment-text">Test re-edit - (add something after posted)</div>
+                                <div class="comment-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                                    iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                </div>
                                 <div class="comment-actions">
-                                    <a href="#" class="comment-actions--like text-muted"><i class="material-icons-round">thumb_up</i> <span class="likes-count">1</span></a><span class="dot text-muted">.</span>
-                                    <a href="#" class="comment-actions--reply text-muted">Reply</a><span class="dot text-muted">.</span>
+                                    <a href="#" class="comment-actions--like text-muted"><i
+                                            class="material-icons-round">thumb_up</i></a>
+                                    <a href="#" class="comment-actions--reply text-muted">Reply</a>
                                     <a href="#" class="comment-actions--delete text-muted">Delete</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="comment comment--create">
-                            <div class="comment-info">
-                                <div class="thread_creator">
-                                    <div class="d-flex flex-row justify-content-space-around">
-                                        <span class="">Joseph Gitonga Wagura</span>
-                                        <i class="material-icons-round text-danger right">cancel</i>
+
+
+                        <div class="comment-form">
+                            <form>
+                                <div class="comment-add-reply">
+                                    <button class="comment-add-reply-close"></button>
+                                    <div class="comment-add-reply-content">
+                                        <span class="comment-add-reply-user">Atiol R Beato</span>
+                                        <span class="comment-add-reply-text">
+                                            fgggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                            ggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                            gggggggggggggggggafsddddddddddddddddddddddddddddddddd
+                                            ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                            dddddddddddddddddddddddddddfasddddddddddddddddddddddd
+                                            ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                            dddddddddddddddddddddddddddddddddddddddddd
+                                        </span>
                                     </div>
-                                    <div class="left">Nice comment</div>
                                 </div>
-                            </div>
+                                <div class="comment-form__wrapper">
+                                    <div class="comment-form--textarea">
+                                        <textarea type="text" oninput="autoResize(this)" name="text" rows="1"
+                                            maxlength="1000" placeholder="Write a comment..." class="textarea empty"
+                                            style="overflow: hidden; overflow-wrap: break-word; height: 44px;"></textarea>
+                                    </div>
+                                    <div class="comment-form--button">
+                                        <button type="submit" class="btn-primary">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
                     </div>
                 </div>
             </div>
             <footer class="footer-content">
-                <div class="footer-content__form">
-                    <form>
-                        <div class="form-group">
-                            <input class="form-control" placeholder="Write a comment..." />
-                            <button type="submit" class="btn-primary"><i class="material-icons-round">send</i></button>
-                        </div>
-                    </form>
-                </div>
                 <div class="footer-content__links">
-                    <div class="footer-links">
-                        <a href="#">Joseph Gitonga Wagura</a><span class="dot text-muted">.</span><a href="#">Support</a>
+                    <div class="">
+                        <a href="#">Joseph Gitonga Wagura</a><span class="dot text-muted">.</span><a
+                            href="#">Support</a>
                     </div>
                     <div class="footer-links text-bold">
                         <span class="text-muted">Created via </span> <a href="#"><span>Comments Bot</span></a>
@@ -105,5 +154,12 @@
             </footer>
         </div>
     </div>
-  </body>
+
+    <script type="text/javascript">
+        function autoResize(element) {
+            element.style.height = (element.scrollHeight) + 'px';
+        }
+    </script>
+</body>
+
 </html>
