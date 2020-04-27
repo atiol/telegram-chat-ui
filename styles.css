@@ -44,6 +44,14 @@ a, a:hover {
     word-wrap: break-word;
     font-size: 15px;
 }
+.topic-img {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.topic-img img {
+    max-width: 100%;
+}
 .thread-action {
     display: flex;
     justify-content: space-between;
@@ -369,6 +377,10 @@ textarea.empty {
 @media (max-width: 500px) {
     textarea {
         font-size: 15px;
+    }
+    .topic-img {
+        margin-top: 0px;
+        padding: 0;
     }
     .comments-count {
         padding: 10px 10px 4px;
