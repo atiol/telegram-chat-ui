@@ -34,6 +34,7 @@ a, a:hover {
 }
 .content-wrapper {
     min-height: 100vh;
+    margin: 0 auto;
     width: 100%;
     max-width: 743px;
     display: flex;
