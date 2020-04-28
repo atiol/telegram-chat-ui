@@ -112,6 +112,12 @@ a, a:hover {
 .bg0 {
     background-color: #7bc862;
 }
+.bg1 {
+    background-color: #8820ce;
+}
+.bg2 {
+    background-color: #e95500;
+}
 .comment .comment-img {
     float: left;
     margin-right: 15px;
